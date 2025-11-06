@@ -1,0 +1,54 @@
+{
+  "name": "Product",
+  "tableName": "products",
+  "fields": [
+    {
+      "name": "sku",
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "description",
+      "type": "string"
+    },
+    {
+      "name": "price",
+      "type": "number",
+      "required": true
+    },
+    {
+      "name": "category",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "stockQuantity",
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    {
+      "name": "isAvailable",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "name": "tags",
+      "type": "json"
+    }
+  ],
+  "rbac": {
+    "Admin": ["all"],
+    "Manager": ["create", "read", "update"],
+    "Viewer": ["read"]
+  },
+  "timestamps": true,
+  "createdAt": "2024-01-15T10:00:00.000Z",
+  "updatedAt": "2024-01-15T10:00:00.000Z"
+}

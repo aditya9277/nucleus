@@ -1,0 +1,61 @@
+{
+  "name": "Student",
+  "tableName": "students",
+  "fields": [
+    {
+      "name": "studentId",
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    {
+      "name": "firstName",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "lastName",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "email",
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    {
+      "name": "dateOfBirth",
+      "type": "date",
+      "required": true
+    },
+    {
+      "name": "grade",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "gpa",
+      "type": "number"
+    },
+    {
+      "name": "enrollmentDate",
+      "type": "date",
+      "required": true
+    },
+    {
+      "name": "isEnrolled",
+      "type": "boolean",
+      "default": true
+    }
+  ],
+  "ownerField": "parentId",
+  "rbac": {
+    "Admin": ["all"],
+    "Manager": ["create", "read", "update"],
+    "Viewer": ["read"]
+  },
+  "timestamps": true,
+  "createdAt": "2024-01-15T10:00:00.000Z",
+  "updatedAt": "2024-01-15T10:00:00.000Z"
+}

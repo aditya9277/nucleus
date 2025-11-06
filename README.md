@@ -1,4 +1,4 @@
-# 🚀 DuBuddy - Auto-Generated CRUD + RBAC Platform
+# 🚀 Auto-Generated CRUD + RBAC Platform
 
 A powerful low-code platform that allows you to define data models via a web UI and automatically generates CRUD APIs, admin interfaces, and role-based access control. Built with modern technologies for scalability and maintainability.
 
